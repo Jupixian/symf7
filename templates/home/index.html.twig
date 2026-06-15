@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+<div style="text-align:center; padding: 4rem 0;">
+    <h1 style="font-size:3rem; margin-bottom:0.5rem;">🎉 {{ title }}</h1>
+    <p style="font-size:1.2rem; color:#6c757d; margin-bottom:2rem;">
+        Your new experimental <strong>Symfony 7</strong> application is running!
+    </p>
+    <div style="display:inline-flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
+        <a href="https://symfony.com/doc/current/index.html"
+           style="background:#1a1a2e;color:#fff;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:bold;">
+            📖 Documentation
+        </a>
+        <a href="https://symfony.com/community"
+           style="background:#e2b96f;color:#1a1a2e;padding:0.75rem 1.5rem;border-radius:6px;text-decoration:none;font-weight:bold;">
+            🤝 Community
+        </a>
+    </div>
+    <p style="margin-top:3rem;color:#adb5bd;font-size:0.875rem;">
+        PHP {{ constant('PHP_VERSION') }} &middot; Symfony {{ constant('Symfony\\Component\\HttpKernel\\Kernel::VERSION') }}
+    </p>
+</div>
+{% endblock %}
