@@ -15,7 +15,7 @@ class HomeControllerTest extends WebTestCase
         $this->assertSelectorTextContains('h1', 'Welcome to Symf7');
     }
 
-    public function testHomepageContainsSymfonyVersion(): void
+    public function testHomepageContainsMainElement(): void
     {
         $client = static::createClient();
         $client->request('GET', '/');
